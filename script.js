@@ -18,5 +18,5 @@ function onTodoListClicked(event){
     console.log(targetElement);
 }
 //step 3: link element, function and event
-addTaskButton.addEventListener('click', onAddTaskClicked)
-todoListContainer.addEventListener('click', onTodoListClicked)
+addTaskButton.addEventListener('click', onAddTaskClicked);
+todoListContainer.addEventListener('click', onTodoListClicked);
