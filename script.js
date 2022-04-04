@@ -11,7 +11,7 @@ function onAddTaskClicked(event) {
     newTaskInput.value = "";
     
     let taskHTML = template.replace("<!-- task_name -->", taskName);
-    todoListContainer.insertAdjacentHTML("beforeend", taskHTML);
+    todoListContainer.insertAdjacentHTML('beforeend', taskHTML);
 
 }
 function onTodoListClicked(event){
@@ -22,7 +22,7 @@ function onTodoListClicked(event){
     }
     let checkbox = targetElement.querySelector(".checkbox");
 
-    if (checkbox.checked){
+    if (checkbox.checked) {
         targetElement.classList.add("completed");
     }
     else
@@ -31,5 +31,5 @@ function onTodoListClicked(event){
     }
 }
 //step 3: link element, function and event
-addTaskButton.addEventListener('click',onAddTaskClicked);
-todoListContainer.addEventListener('click',onTodoListClicked);
+addTaskButton.addEventListener('click', onAddTaskClicked);
+todoListContainer.addEventListener('click', onTodoListClicked);
